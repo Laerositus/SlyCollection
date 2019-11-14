@@ -7,9 +7,10 @@ import { AppComponent } from './app.component';
 import { CoreModule } from './core/core.module';
 import { AppStoreModule } from './store/store.module';
 import { AboutComponent } from './about/about.component';
+import { CharacterComponent } from './character/character.component';
 
 @NgModule({
-  declarations: [AppComponent, AboutComponent],
+  declarations: [AppComponent, AboutComponent, CharacterComponent],
   imports: [
     BrowserModule,
     HttpClientModule,
