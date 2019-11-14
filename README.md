@@ -11,9 +11,9 @@ With this application you can get information on every character and media of th
 * login: string
 * password: string
 
-### Character                   
-* name: string                  
-* id: number                    
+### Character 
+* id: number  
+* name: string
 * born: date                    
 * game: Game[]                
 * species: string               
@@ -23,14 +23,15 @@ With this application you can get information on every character and media of th
 * more info: string
 
 ### Equipment   
-* name: string  
-* id: number    
+* id: number  
+* name: string    
 * game: Game[]
 * user/s: Character[]
 * type: string  
 * more info: string
 
 ### Game
+* id: number
 * name: string
 * platform/s: string[]
 * developer: string[]
@@ -39,6 +40,7 @@ With this application you can get information on every character and media of th
 * more info: string
 
 ### Voice Actor
+* id: number
 * name: string
 * birthdate: date
 * voice for: string[]
