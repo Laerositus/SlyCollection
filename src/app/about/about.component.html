@@ -1,0 +1,203 @@
+<div class="content">
+<h1>
+	<a id="user-content-about-this-application" class="anchor" href="#about-this-application"
+		aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>About this application</h1>
+<p>This is an application made for the course "Clientside Web Frameworks" for Avans Hogeschool.</p>
+
+<h1>
+	<a id="user-content-slycollection" class="anchor" href="#slycollection"
+		aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>SlyCollection</h1>
+<p>With this application you can get information on every character and media of the Sly Cooper universe.</p> 
+
+<h2>
+	<a id="user-content-entities" class="anchor" href="#entities"
+		aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Entities</h2>
+<h3>
+	<a id="user-content-user" class="anchor" href="#user"
+		aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>User</h3>
+<ul>
+	<li>id: number</li>
+	<li>login: string</li>
+	<li>password: string</li>
+</ul>
+
+<h3>
+	<a id="user-content-character" class="anchor" href="#character"
+		aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Character</h3>
+<ul>
+	<li>name: string</li>
+	<li>id: number</li>
+	<li>born: date</li>
+	<li>game: Game[]</li>
+	<li>species: string</li>
+	<li>relationship: Character</li>
+	<li>weapon/s: Equipment[]</li>
+	<li>voiced by: Voice Actor</li>
+	<li>more info: string</li>
+</ul>
+
+<h3>
+	<a id="user-content-equipment" class="anchor" href="#equipment"
+		aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Equipment</h3>
+<ul>
+	<li>name: string</li>
+	<li>id: number</li>
+	<li>game: Game[]</li>
+	<li>user/s: Character[]</li>
+	<li>type: string</li>
+	<li>more info: string</li>
+</ul>
+
+<h3>
+	<a id="user-content-game" class="anchor" href="#game"
+		aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Game</h3>
+<ul>
+	<li>name: string</li>
+	<li>platform/s: string[]</li>
+	<li>developer: string[]</li>
+	<li>publisher: string</li>
+	<li>released: date</li>
+	<li>more info: string</li>
+</ul>
+
+<h3>
+	<a id="user-content-voice-actor" class="anchor" href="#voice-actor"
+		aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Voice Actor</h3>
+<ul>
+	<li>name: string</li>
+	<li>birthdate: date</li>
+	<li>voice for: string[]</li>
+	<li>more info: string</li>
+</ul>
+
+<h2>
+	<a id="user-content-use-cases" class="anchor" href="#use-cases"
+		aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Use Cases</h2>
+<p>This application will offer the following funcitonalities:</p>
+<table border=1>
+	<thead>
+		<tr>
+			<th align="left">Name</th>
+			<th align="left">UC-01 Logging in</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td align="left">Description</td>
+			<td align="left">The user can login</td>
+		</tr>
+		<tr>
+			<td align="left">Actor</td>
+			<td align="left">Regular user</td>
+		</tr>
+		<tr>
+			<td align="left">Precondition</td>
+			<td align="left">No logged in user</td>
+		</tr>
+		<tr>
+			<td align="left">Scenario</td>
+			<td align="left">1. User fills in login name and password and clicks Login
+				button.<br> 2. Application validates filled in credentials.<br> 3. If credentials are valid the application will redirect to starting screen.</td>
+		</tr>
+		<tr>
+			<td align="left">Postcondition</td>
+			<td align="left">User is logged in</td>
+		</tr>
+	</tbody>
+</table>
+<br>
+<table border=1>
+	<thead>
+		<tr>
+			<th align="left">Name</th>
+			<th align="left">UC-02 Register</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td align="left">Description</td>
+			<td align="left">A new user can register with a login and password</td>
+		</tr>
+		<tr>
+			<td align="left">Actor</td>
+			<td align="left">New user</td>
+		</tr>
+		<tr>
+			<td align="left">Precondition</td>
+			<td align="left">No logged in user</td>
+		</tr>
+		<tr>
+			<td align="left">Scenario</td>
+			<td align="left">1. User fills in login name and password and clicks Register
+				button.<br> 2. Applicaiton validates in credentials.<br> 3. If credentials are valid the application will redirect to login page. UC-01</td>
+		</tr>
+		<tr>
+			<td align="left">Postcondition</td>
+			<td align="left">User has valid account</td>
+		</tr>
+	</tbody>
+</table>
+<br>
+<table border=1>
+	<thead>
+		<tr>
+			<th align="left">Name</th>
+			<th align="left">UC-03 Login Fail</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td align="left">Description</td>
+			<td align="left">A user has filled in invalid credentials</td>
+		</tr>
+		<tr>
+			<td align="left">Actor</td>
+			<td align="left">Regular user</td>
+		</tr>
+		<tr>
+			<td align="left">Precondition</td>
+			<td align="left">No logged in user</td>
+		</tr>
+		<tr>
+			<td align="left">Scenario</td>
+			<td align="left">1. User fills in login name and password and clicks Register
+				button.<br> 2. Applicaiton validates in credentials.<br> 3. Credentials are not valid.<br> 4. Pop-up on screen with "Invalid login or password, please try again". UC-01</td>
+		</tr>
+		<tr>
+			<td align="left">Postcondition</td>
+			<td align="left">No logged in user</td>
+		</tr>
+	</tbody>
+</table>
+<br>
+<table border=1>
+	<thead>
+		<tr>
+			<th align="left">Name</th>
+			<th align="left">UC-04</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td align="left">Description</td>
+			<td align="left">Ma boi</td>
+		</tr>
+		<tr>
+			<td align="left">Actor</td>
+			<td align="left"></td>
+		</tr>
+		<tr>
+			<td align="left">Precondition</td>
+			<td align="left"></td>
+		</tr>
+		<tr>
+			<td align="left">Scenario</td>
+			<td align="left"></td>
+		</tr>
+		<tr>
+			<td align="left">Postcondition</td>
+			<td align="left"></td>
+		</tr>
+	</tbody>
+</table>
+</div>
