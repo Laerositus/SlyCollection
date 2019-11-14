@@ -70,11 +70,3 @@ Actor | Regular user
 Precondition | No logged in user
 Scenario | 1. User fills in login name and password and clicks Register button.<br> 2. Applicaiton validates in credentials.<br> 3. Credentials are not valid.<br> 4. Pop-up on screen with "Invalid login or password, please try again". UC-01
 Postcondition | No logged in user
-
-Name | UC-04
-:--- | :---  
-Description | Register fail
-Actor | 
-Precondition |
-Scenario |
-Postcondition |
