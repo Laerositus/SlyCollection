@@ -1,0 +1,13 @@
+<div class="content-container">
+    <app-list-header title="Games" (add)="enableAddMode()" (refresh)="getGames()"></app-list-header>
+    <div class="columns is-multiline is-variable">
+      <div class="column is-8" *ngIf="games$ | async as games">
+        <app-game-list *ngIf="!selected" [games]="games" [selectedGame]="selected" (selected)="select($event)"
+          (deleted)="askToDelete($event)"></app-game-list>
+        <app-game-detail *ngIf="selected" [game]="selected" (unselect)="clear()" (save)="save($event)"></app-game-detail>
+      </div>
+    </div>
+  
+    <app-modal class="modal-game" [message]="message" [isOpen]="showModal" (handleNo)="closeModal()" (handleYes)="deleteGame()"></app-modal>
+  </div>
+  

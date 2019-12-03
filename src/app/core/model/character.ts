@@ -1,15 +1,15 @@
 import { Game } from './game';
 import { VoiceActor } from './voiceActor';
-import { Equipment } from './equipment';
+import { Weapon } from './weapon';
 
 export class Character {
     id: number;
     name: string;
-    born: Date;
+    born: number;
     inGames: Game[];
     species: string;
     relationship: Character;
-    weapon: Equipment;
+    weapon: Weapon;
     voicedBy: VoiceActor;
     moreInfo: string;
 }

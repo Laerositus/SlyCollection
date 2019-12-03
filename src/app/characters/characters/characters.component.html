@@ -1,0 +1,13 @@
+<div class="content-container">
+    <app-list-header title="Characters" (add)="enableAddMode()" (refresh)="getCharacters()"></app-list-header>
+    <div class="columns is-multiline is-variable">
+      <div class="column is-8" *ngIf="characters$ | async as characters">
+        <app-character-list *ngIf="!selected" [characters]="characters" [selectedCharacter]="selected" (selected)="select($event)"
+          (deleted)="askToDelete($event)"></app-character-list>
+        <app-character-detail *ngIf="selected" [character]="selected" (unselect)="clear()" (save)="save($event)"></app-character-detail>
+      </div>
+    </div>
+  
+    <app-modal class="modal-character" [message]="message" [isOpen]="showModal" (handleNo)="closeModal()" (handleYes)="deleteCharacter()"></app-modal>
+  </div>
+  

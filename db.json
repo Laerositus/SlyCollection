@@ -57,5 +57,34 @@
       "name": "Landon",
       "description": "Mandalorian mauler"
     }
+  ],
+  "games": [
+    { 
+      "id": 1, 
+      "name": "Sly Cooper and the Thievius Raccoonus",
+      "platform": [
+        {
+          "id": 1,
+          "name": "Playstation 2"
+        },
+        {
+          "id": 2,
+          "name": "Playstation 3"
+        }
+      ], 
+      "developer": [
+        {
+          "id": 1,
+          "name":"Sucker Punch Productions"
+        },
+        {
+          "id": 2,
+          "name": "Sanzaru Games"
+        }
+      ], 
+        "publisher": "", 
+        "released": "2002-09-23", 
+        "moreInfo": "https://slycooper.fandom.com/wiki/Sly_Cooper_and_the_Thievius_Raccoonus"
+    }
   ]
 }

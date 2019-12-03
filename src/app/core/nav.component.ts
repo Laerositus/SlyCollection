@@ -13,6 +13,18 @@ import { faCoffee } from '@fortawesome/free-solid-svg-icons';
       <a routerLink="/villains" routerLinkActive="router-link-active">
         <span>Villains</span>
       </a>
+      <a routerLink="/characters" routerLinkActive="router-link-active">
+        <span>Characters</span>
+      </a>
+      <a routerLink="/games" routerLinkActive="router-link-active">
+        <span>Games</span>
+      </a>
+      <a routerLink="/voiceActors" routerLinkActive="router-link-active">
+        <span>Voice Actors</span>
+      </a>
+      <a routerLink="/weapons" routerLinkActive="router-link-active">
+        <span>Weapons</span>
+      </a>
       <a routerLink="/about" routerLinkActive="router-link-active">
         <span>About</span>
       </a>

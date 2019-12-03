@@ -4,6 +4,11 @@ This is an application made for the course "Clientside Web Frameworks" for Avans
 # SlyCollection
 With this application you can get information on every character and media of the Sly Cooper universe. 
 
+## Student Info
+#### Name: Jelle Stander
+#### StudentNr: 2142888
+#### Class: 23INVT2B
+
 ## Entities
 
 ### User

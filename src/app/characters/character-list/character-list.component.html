@@ -1,0 +1,13 @@
+<ul class="list">
+    <li *ngFor="let character of characters; trackBy: byId; let i = index" role="presentation">
+      <div class="card">
+        <app-card-content [name]="character.name" [description]="character.description"
+        ></app-card-content>
+        <footer class="card-footer">
+          <app-button-footer class="card-footer-item" [className]="'delete-item'" [iconClasses]="'fas fa-trash'" (clicked)="deleteCharacter($event)" label="Delete" [item]="character"></app-button-footer>
+          <app-button-footer class="card-footer-item" [className]="'edit-item'" [iconClasses]="'fas fa-edit'" (clicked)="selectCharacter($event)" label="Edit" [item]="character"></app-button-footer>
+        </footer>
+      </div>
+    </li>
+  </ul>
+  
