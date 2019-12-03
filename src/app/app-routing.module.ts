@@ -7,14 +7,6 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: '/dashboard' },
   { path: 'dashboard', component: DashboardComponent},
-  {
-    path: 'heroes',
-    loadChildren: () => import('./heroes/heroes.module').then(m => m.HeroesModule)
-  },
-  {
-    path: 'villains',
-    loadChildren: () => import('./villains/villains.module').then(m => m.VillainsModule)
-  },
   { 
     path: 'characters',
     loadChildren: () => import('./characters/characters.module').then(m => m.CharactersModule)

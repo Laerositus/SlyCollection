@@ -7,12 +7,6 @@ import { faCoffee } from '@fortawesome/free-solid-svg-icons';
   <nav class="menu">
     <p class="menu-label">Menu</p>
     <ul class="menu-list">
-      <a routerLink="/heroes" routerLinkActive="router-link-active">
-        <span>Heroes</span>
-      </a>
-      <a routerLink="/villains" routerLinkActive="router-link-active">
-        <span>Villains</span>
-      </a>
       <a routerLink="/characters" routerLinkActive="router-link-active">
         <span>Characters</span>
       </a>
