@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 import { Routes, RouterModule} from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { GamesComponent } from './games/games.component';
@@ -16,6 +16,7 @@ const routes: Routes = [
 @NgModule({
   declarations: [GamesComponent, GameListComponent, GameDetailComponent],
   imports: [CommonModule, RouterModule.forChild(routes), SharedModule],
-  exports: [RouterModule, GamesComponent]
+  exports: [RouterModule, GamesComponent],
+  schemas: [NO_ERRORS_SCHEMA]
 })
 export class GamesModule { }

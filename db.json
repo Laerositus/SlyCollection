@@ -59,8 +59,8 @@
     }
   ],
   "games": [
-    { 
-      "id": 1, 
+    {
+      "id": 1,
       "name": "Sly Cooper and the Thievius Raccoonus",
       "platform": [
         {
@@ -71,20 +71,225 @@
           "id": 2,
           "name": "Playstation 3"
         }
-      ], 
+      ],
       "developer": [
         {
           "id": 1,
-          "name":"Sucker Punch Productions"
+          "name": "Sucker Punch Productions"
         },
         {
           "id": 2,
           "name": "Sanzaru Games"
         }
-      ], 
-        "publisher": "", 
-        "released": "2002-09-23", 
-        "moreInfo": "https://slycooper.fandom.com/wiki/Sly_Cooper_and_the_Thievius_Raccoonus"
+      ],
+      "publisher": "",
+      "released": "2002-09-23",
+      "moreInfo": "https://slycooper.fandom.com/wiki/Sly_Cooper_and_the_Thievius_Raccoonus"
+    },
+    {
+      "id": 2,
+      "name": "Sly 2: Band of Thieves",
+      "platform": [
+        {
+          "id": 1,
+          "name": "Playstation 2"
+        },
+        {
+          "id": 2,
+          "name": "Playstation 3"
+        }
+      ],
+      "developer": [
+        {
+          "id": 1,
+          "name": "Sucker Punch Productions"
+        },
+        {
+          "id": 2,
+          "name": "Sanzaru Games"
+        }
+      ],
+      "publisher": "Sony Interactive Entertainment",
+      "released": "2004-09-14",
+      "moreInfo": "https://slycooper.fandom.com/wiki/Sly_Cooper_and_the_Thievius_Raccoonus"
+    }
+  ],
+  "characters": [
+    {
+      "id": 1,
+      "name": "Sly Cooper",
+      "born": 1984,
+      "inGames": [
+        {
+          "id": 1,
+          "name":"Sly Cooper and the Thievius Raccoonus"
+        },
+        {
+          "id": 2,
+          "name":"Sly 2: Band of Thieves"
+        },
+        {
+          "id": 3,
+          "name":"Sly 3: Honor Among Thieves"
+        },
+        {
+          "id": 4,
+          "name":"Sly Cooper: Thieves in Time"
+        }
+      ],
+      "species": "",
+      "relationship": {
+        "id": 3,
+        "name":"Carmelita Fox"
+      },
+      "weapon": {
+        "id": 1,
+        "name":"Cooper Cane"
+      },
+      "voicedBy": {
+        "id": 1,
+        "name":"Kevin Miller"
+      },
+      "image": "https://vignette.wikia.nocookie.net/sly/images/7/7f/SC2_Sly_Cooper.png/revision/latest/scale-to-width-down/350?cb=20191106055933",
+      "moreInfo": "https://slycooper.fandom.com/wiki/Sly_Cooper"
+    },
+    {
+      "id": 2,
+      "name": "Conner Cooper",
+      "born": 1950,
+      "inGames": [ null ],
+      "species": "",
+      "relationship": {
+        "id": 50,
+        "name":"Unnamed Wife"
+      },
+      "weapon": {
+        "id": 1,
+        "name":"Cooper Cane"
+      },
+      "voicedBy": null,
+      "moreInfo": "https://slycooper.fandom.com/wiki/Conner_Cooper"
+    },
+    {
+      "id": 3,
+      "name": "Carmelita Fox",
+      "born": 1981,
+      "inGames": [
+        {
+          "id": 1,
+          "name":"Sly Cooper and the Thievius Raccoonus"
+        },
+        {
+          "id": 2,
+          "name":"Sly 2: Band of Thieves"
+        },
+        {
+          "id": 3,
+          "name":"Sly 3: Honor Among Thieves"
+        },
+        {
+          "id": 4,
+          "name":"Sly Cooper: Thieves in Time"
+        }
+      ],
+      "species": "Fox",
+      "relationship": {
+        "id": 1,
+        "name":"Sly Cooper"
+      },
+      "weapon": {
+        "id": 2,
+        "name":"Shock Pistol"
+      },
+      "voicedBy": {
+        "id": 2,
+        "name":"Ruth Livier"
+      },
+      "moreInfo": "https://slycooper.fandom.com/wiki/Carmelita_Fox"
+    },
+    {
+      "id": 4,
+      "name": "",
+      "born": 1994,
+      "inGames": [
+        {
+          "id": 1,
+          "name":""
+        },
+        {
+          "id": 2,
+          "name":""
+        },
+        {
+          "id": 3,
+          "name":""
+        },
+        {
+          "id": 4,
+          "name":""
+        }
+      ],
+      "species": "",
+      "relationship": {
+        "id": 3
+      },
+      "weapon": {
+        "id": 1
+      },
+      "voicedBy": {
+        "id": 1
+      },
+      "moreInfo": ""
+    }
+  ],
+  "weapons": [
+    {
+      "id": 1,
+      "name": "Cooper Cane",
+      "inGames": [
+        {
+          "id": 1,
+          "name":""
+        },
+        {
+          "id": 2,
+          "name":""
+        },
+        {
+          "id": 3,
+          "name":""
+        },
+        {
+          "id": 4,
+          "name":""
+        }
+      ],
+      "users": [
+        {
+          "id": 1,
+          "name": "Sly Cooper"
+        },
+        {
+          "id":2,
+          "name":"Conner Cooper"
+        }
+      ],
+      "type":"melee",
+      "moreInfo": "https://slycooper.fandom.com/wiki/Sly_Cooper%27s_cane"
+    }
+  ],
+  "voiceActors": [
+    {
+      "id": 1,
+      "name": "Kevin Miller",
+      "Date of Birth": "1977-12-21",
+      "voiceFor": [
+        {
+          "id": 1,
+          "name": "Sly Cooper"
+        }
+      ],
+      "moreInfo": "https://slycooper.fandom.com/wiki/Kevin_Miller"
     }
   ]
 }

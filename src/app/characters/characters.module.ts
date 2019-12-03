@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 import { Routes, RouterModule} from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { CharactersComponent } from './characters/characters.component';
@@ -16,6 +16,7 @@ const routes: Routes = [
 @NgModule({
   declarations: [CharactersComponent, CharacterListComponent, CharacterDetailComponent],
   imports: [CommonModule, RouterModule.forChild(routes), SharedModule],
-  exports: [RouterModule, CharactersComponent]
+  exports: [RouterModule, CharactersComponent],
+  schemas: [ NO_ERRORS_SCHEMA ]
 })
 export class CharactersModule { }

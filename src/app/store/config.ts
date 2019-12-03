@@ -15,6 +15,22 @@ export const defaultDataServiceConfig: DefaultDataServiceConfig = {
     Villain: {
       entityResourceUrl: `${root}/villains/`,
       collectionResourceUrl: `${root}/villains/`
+    },
+    Game: {
+      entityResourceUrl: `${root}/games/`,
+      collectionResourceUrl: `${root}/games/`
+    },
+    Character: {
+      entityResourceUrl: `${root}/characters/`,
+      collectionResourceUrl: `${root}/characters/`
+    },
+    VoiceActor: {
+      entityResourceUrl: `${root}/voiceactor/`,
+      collectionResourceUrl: `${root}/voiceactor/`
+    },
+    Weapon: {
+      entityResourceUrl: `${root}/weapons/`,
+      collectionResourceUrl: `${root}/weapons/`
     }
   }
 };

@@ -122,7 +122,7 @@ const voiceActors = [
   {
     id: 1, 
     name: 'Kevin Miller', 
-    birthday: new Date(1977,12,21), 
+    birthday: new Date(1977-12-21), 
     voiceFor: [
       CHARACTERS.entries[1]
     ], 
